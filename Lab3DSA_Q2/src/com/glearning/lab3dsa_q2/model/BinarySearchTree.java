@@ -33,7 +33,7 @@ public class BinarySearchTree {
 			node.left = insert(node.left, val);
 		}
 		if(val > node.val) {
-			node.right = insert(node.left, val);
+			node.right = insert(node.right, val);
 		}
 		return node;
 	}
