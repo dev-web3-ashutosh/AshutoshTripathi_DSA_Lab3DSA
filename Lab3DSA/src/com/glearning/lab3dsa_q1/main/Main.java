@@ -1,9 +1,9 @@
-package com.glearning.lab3dsa.main;
+package com.glearning.lab3dsa_q1.main;
 
 import java.util.Scanner;
 
-import com.glearning.lab3dsa.model.UserInput;
-import com.glearning.lab3dsa.service.BalancedBrackets;
+import com.glearning.lab3dsa_q1.model.UserInput;
+import com.glearning.lab3dsa_q1.service.BalancedBrackets;
 
 public class Main {
 

@@ -1,4 +1,4 @@
-package com.glearning.lab3dsa.service;
+package com.glearning.lab3dsa_q1.service;
 
 import java.util.Stack;
 

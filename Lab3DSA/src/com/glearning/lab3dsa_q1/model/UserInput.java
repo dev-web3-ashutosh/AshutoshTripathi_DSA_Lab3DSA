@@ -1,4 +1,4 @@
-package com.glearning.lab3dsa.model;
+package com.glearning.lab3dsa_q1.model;
 
 public class UserInput {
 	String input="";
