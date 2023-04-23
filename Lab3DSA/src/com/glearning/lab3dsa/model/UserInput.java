@@ -5,4 +5,7 @@ public class UserInput {
 	UserInput(String input) {
 		this.input=input;
 	}
+	public String getUserInput() {
+		return input;
+	}
 }
