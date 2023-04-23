@@ -20,7 +20,15 @@ public class Main {
 			}
 			obj.setUserInput(input);
 			boolean result = BalancedBrackets.isBalanced(obj.getUserInput());
-			System.out.println("Input is balanced ? "+ result);
+			if(result==true) {
+				System.out.println("The entered String has Balanced Brackets");
+			}
+			else if(result==false) {
+				System.out.println("The entered Strings do not contain Balanced Brackets");
+			}
+		}
+		if(flag==false) {
+			System.out.println("Program terminated successfully");
 		}
 		sc.close();
 	}
