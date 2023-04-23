@@ -2,14 +2,10 @@ package com.glearning.lab3dsa.service;
 
 import java.util.Stack;
 
-import com.glearning.lab3dsa.model.UserInput;
-
 public class BalancedBrackets {
-	public void isBalanced() {
+	public static boolean isBalanced(String input) {
 		//create a stack of characters
 		Stack<Character> stack=new Stack<>();
-		UserInput obj=new UserInput();
-		String input=obj.getUserInput();
 		//iterate through the elements of input
 		for(int i=0;i<input.length();i++) {
 			//extract the character from input string
@@ -19,11 +15,18 @@ public class BalancedBrackets {
 				//push the char to stack
 				stack.push(ch);
 			}
-			//start popping elements from stack
-			//if popped element does not match the closing brackets, return false
-			
-			
+			else if (ch == ')' || ch == '}' || ch == ']') {
+				//start popping elements from stack
+				//if popped element does not match the closing brackets, return false
+				char top = stack.pop();
+				if ((ch == ')' && top != '(') 
+					|| (ch == '}' && top != '{')
+					|| (ch == ']' && top != '[')) {
+					return false;
+				}
+			}
 		}
+		return stack.empty();
 	}
 }
 
