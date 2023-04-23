@@ -1,5 +1,9 @@
 package com.glearning.lab3dsa.service;
 
-public class BalancedBrackets {
+import java.util.Stack;
 
+public class BalancedBrackets {
+	//create a stack of characters
+	Stack<Character> stack=new Stack<>();
+	
 }
